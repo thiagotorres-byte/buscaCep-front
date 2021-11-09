@@ -22,8 +22,8 @@
     <fieldset>
         <legend>Cadastro de CEP</legend>
         <form action="" method="">
-            <p class="topico">CEP</p>
-            <p><input type="number" min="0"></p>
+            <label id="cep">CEP</label>
+            <p><input type="number" id="cep" min="0" pattern=".{8,}" title="Digite um CEP que contenha 8 caracteres" required></p>
             <p><input type="submit"></p>
         </form>
     </fieldset>

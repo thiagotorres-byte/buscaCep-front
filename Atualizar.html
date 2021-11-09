@@ -15,21 +15,22 @@
         });
     </script> 
 </head>
+
 <body>
     <div id="header"></div>
     <fieldset>
         <legend>Cadastro de CEP</legend>
-        <form action="" method="">
-            <p class="topico">CEP</p>
-            <p><input type="number" min="0"></p>
-            <p class="topico">Logradouro</p>
-            <p><input type="text"></p>
-            <p class="topico">Tipo Logradouro</p>
-            <p><input type="text"></p>
-            <p class="topico">Complemento</p>
-            <p><input type="text"></p>
-            <p class="topico">UF</p>
-            <p><select id="estado" name="estado">
+        <form action="" method="put">
+            <label for="cep">CEP</label>
+            <p><input type="number" id="cep" min="0" pattern=".{8}" title="Digite um CEP que contenha 8 caracteres" required></p>
+            <label for="logradouro">Logradouro</label>
+            <p><input type="text" id="logradouro" max="255" pattern="[A-Za-z\s]+$" title = "Digite apenas letras"></p>
+            <label for="tipo_logradouro">Tipo Logradouro</label>
+            <p><input type="text" id="tipo_logradouro" max="255" pattern="[A-Za-z\s]+$" title = "Digite apenas letras"></p>
+            <label for="complemento">Complemento</label>
+            <p><input type="text" id="complemento" max="255" pattern="[A-Za-z\s]+$" title = "Digite apenas letras"></p>
+            <label for="uf">UF</label>
+            <p><select id="uf" name="uf" style="width: 190px;">
                 <option value="AC">Acre</option>
                 <option value="AL">Alagoas</option>
                 <option value="AP">Amapá</option>
@@ -59,11 +60,11 @@
                 <option value="TO">Tocantins</option>
                 <option value="EX">Estrangeiro</option>
             </select></p>
-            <p class="topico">Cidade</p>
-            <p><input type="text"></p>
-            <p class="topico">Local</p>
-            <p><input type="text"></p>
-            <p><input type="submit"></p>
+            <label for="cidade">Cidade</label>
+            <p><input type="text" id="cidade" max="255" pattern="[A-Za-z\s]+$" title = "Digite apenas letras" required></p>
+            <label for="local">Local</label>
+            <p><input type="text" id="local" max="255"></p>
+            <p><input type="submit" onclick="alert('CEP atualizado!')"></p>
         </form>
     </fieldset>
 </body>
