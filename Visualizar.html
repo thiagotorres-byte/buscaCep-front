@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-primary navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="brasil.jpg" width="40" height="40" alt="">
+            </a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li><a class="nav-link" href="Cadastrar.html">Cadastrar<span class="sr-only">(current)</span></a></li>
+                    <li><a class="nav-link" href="Deletar.html">Deletar</a></li>
+                    <li><a class="nav-link" href="Atualizar.html">Atualizar</a></li>
+                    <li><a class="nav-link active" href="Visualizar.html">Visualizar</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <fieldset>
+        <legend>Cadastro de CEP</legend>
+        <form action="" method="">
+            <p class="topico">CEP</p>
+            <p><input type="number"></p>
+            <p class="topico">Logradouro</p>
+            <p><input type="number" min=0></p>
+            <p class="topico">Tipo Logradouro</p>
+            <p><input type="number" min=0></p>
+            <p class="topico">Complemento</p>
+            <p><input type="number"></p>
+            <p class="topico">UF</p>
+            <p><input type="number"></p>
+            <p class="topico">Cidade</p>
+            <p><input type="number"></p>
+            <p class="topico">Local</p>
+            <p><input type="number"></p>
+            <p><input type="submit"></p>
+        </form>
+    </fieldset>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+
+</html>
